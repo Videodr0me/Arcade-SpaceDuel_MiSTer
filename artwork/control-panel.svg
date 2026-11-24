@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" role="img" aria-labelledby="title description">
+  <title id="title">Space Duel arcade controls and default gamepad mapping</title>
+  <desc id="description">Upright cabinet viewed by the player. Green Ship, Player 2, is on the left; Red Ship, Player 1, is on the right. Each has rotate left, rotate right, thrust and fire across the upper row, with shields below. Start and Game Select are in the center. Each controller uses D-pad left and right to rotate, X for thrust, A for fire and B for shields. Start and Select are shared; R inserts a coin, Y operates Coin 2, and L pauses. This is a schematic of the button layout, not a scale reproduction of the artwork.</desc>
+  <defs>
+    <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V22" fill="none" stroke="#31536d" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="green-panel" x2="0" y2="1"><stop stop-color="#224b34"/><stop offset="1" stop-color="#10261d"/></linearGradient>
+    <linearGradient id="red-panel" x2="0" y2="1"><stop stop-color="#5a2630"/><stop offset="1" stop-color="#29171e"/></linearGradient>
+    <radialGradient id="green-button" cx=".35" cy=".25"><stop stop-color="#8acb66"/><stop offset=".65" stop-color="#41a14d"/><stop offset="1" stop-color="#1c5933"/></radialGradient>
+    <radialGradient id="red-button" cx=".35" cy=".25"><stop stop-color="#f78274"/><stop offset=".65" stop-color="#d8464e"/><stop offset="1" stop-color="#822733"/></radialGradient>
+    <linearGradient id="cone" x2="0" y2="1"><stop stop-color="#657079"/><stop offset=".5" stop-color="#28333b"/><stop offset="1" stop-color="#0d151a"/></linearGradient>
+    <g id="green-cap"><ellipse cy="5" rx="32" ry="28" fill="#0a1812" stroke="#80b88e" stroke-width="2"/><circle r="26" fill="url(#green-button)" stroke="#a7dc91"/><circle cy="-2" r="19" fill="none" stroke="#1a6c37" stroke-width="2"/></g>
+    <g id="red-cap"><ellipse cy="5" rx="32" ry="28" fill="#231117" stroke="#bd8089" stroke-width="2"/><circle r="26" fill="url(#red-button)" stroke="#fba090"/><circle cy="-2" r="19" fill="none" stroke="#922d3b" stroke-width="2"/></g>
+    <g id="start-cap"><path d="M-25 14L-16-12Q0-24 16-12L25 14Q0 30-25 14Z" fill="url(#cone)" stroke="#7d8b94"/><ellipse cy="-12" rx="16" ry="9" fill="#0a1015" stroke="#7d8b94"/><ellipse cy="-13" rx="9" ry="5" fill="#f16d60"/></g>
+  </defs>
+  <rect width="1200" height="470" rx="16" fill="#10171b"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="30" y="38" fill="#f6efd0" font-size="26" font-weight="700" letter-spacing="2.5">SPACE DUEL</text>
+    <text x="1170" y="37" text-anchor="end" fill="#c1cbd1" font-size="16" letter-spacing="1.2">ARCADE CONTROLS / GAMEPAD DEFAULTS</text>
+    <rect x="20" y="57" width="1160" height="296" rx="23" fill="#18232b" stroke="#4c5e68"/>
+    <rect x="31" y="68" width="1138" height="274" rx="16" fill="#080d11"/>
+    <rect x="31" y="68" width="1138" height="274" rx="16" fill="url(#grid)"/>
+    <path d="M44 84H469L520 113V315L502 329H62L44 311Z" fill="url(#green-panel)" stroke="#b8d98f" stroke-width="2"/>
+    <path d="M680 113L731 84H1156V311L1138 329H698L680 315Z" fill="url(#red-panel)" stroke="#f0a197" stroke-width="2"/>
+    <g fill="none" stroke="#eee9ce" stroke-width="2" opacity=".7"><path d="M51 89H468L513 116V311L499 322H66L51 308Z"/><path d="M687 116L732 89H1149V308L1134 322H701L687 311Z"/></g>
+    <g text-anchor="middle" font-weight="700">
+      <text x="280" y="114" fill="#ccefb3" font-size="19" letter-spacing="1.5">GREEN SHIP / PLAYER 2</text>
+      <text x="920" y="114" fill="#ffb7aa" font-size="19" letter-spacing="1.5">RED SHIP / PLAYER 1</text>
+    </g>
+    <g text-anchor="middle" fill="#f4efd6" font-size="13" font-weight="700">
+      <text x="104" y="146">ROTATE LEFT</text><text x="206" y="146">ROTATE RIGHT</text><text x="366" y="146">THRUST</text><text x="464" y="146">FIRE</text>
+      <text x="744" y="146">ROTATE LEFT</text><text x="846" y="146">ROTATE RIGHT</text><text x="1006" y="146">THRUST</text><text x="1104" y="146">FIRE</text>
+    </g>
+    <use href="#green-cap" x="104" y="183"/><use href="#green-cap" x="206" y="183"/><use href="#green-cap" x="366" y="183"/><use href="#green-cap" x="464" y="183"/>
+    <use href="#red-cap" x="744" y="183"/><use href="#red-cap" x="846" y="183"/><use href="#red-cap" x="1006" y="183"/><use href="#red-cap" x="1104" y="183"/>
+    <g text-anchor="middle" fill="#dce6e5" font-size="14">
+      <text x="104" y="231">D-pad Left</text><text x="206" y="231">D-pad Right</text><text x="366" y="231">X</text><text x="464" y="231">A</text>
+      <text x="744" y="231">D-pad Left</text><text x="846" y="231">D-pad Right</text><text x="1006" y="231">X</text><text x="1104" y="231">A</text>
+    </g>
+    <g fill="none" stroke-width="1.5" opacity=".6"><path d="M78 272H216M344 272H486" stroke="#a5d99b"/><path d="M714 272H856M984 272H1122" stroke="#efb1a6"/></g>
+    <use href="#green-cap" x="280" y="272"/><use href="#red-cap" x="920" y="272"/>
+    <g text-anchor="middle" fill="#f4efd6" font-size="15" font-weight="700"><text x="280" y="316">SHIELDS / B</text><text x="920" y="316">SHIELDS / B</text></g>
+    <g text-anchor="middle">
+      <text x="600" y="112" fill="#c1cbd1" font-size="12" letter-spacing="1">SHARED</text>
+      <use href="#start-cap" x="600" y="151"/>
+      <text x="600" y="193" fill="#f5eed1" font-size="15" font-weight="700">START</text>
+      <use href="#start-cap" x="600" y="244"/>
+      <text x="600" y="286" fill="#f5eed1" font-size="14" font-weight="700">GAME SELECT</text>
+      <text x="600" y="308" fill="#a5cbd9" font-size="14">Select</text>
+      <text x="280" y="382" fill="#ccefb3" font-size="19" font-weight="700">CONTROLLER 2</text>
+      <text x="920" y="382" fill="#ffb7aa" font-size="19" font-weight="700">CONTROLLER 1</text>
+      <text x="600" y="410" fill="#a5cbd9" font-size="17">Insert a coin, choose the game with Select, then press Start.</text>
+    </g>
+    <path d="M30 429H1170" stroke="#34434b"/>
+    <text x="30" y="455" fill="#b5c2c9" font-size="15">Upright cabinet viewed by the player / schematic button layout</text>
+    <text x="1170" y="455" text-anchor="end" fill="#f4edcf" font-size="16">COIN: R / COIN 2: Y / PAUSE: L</text>
+  </g>
+</svg>
